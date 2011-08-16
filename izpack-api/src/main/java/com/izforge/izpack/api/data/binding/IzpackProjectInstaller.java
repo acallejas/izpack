@@ -14,7 +14,7 @@ import java.util.List;
 public class IzpackProjectInstaller implements Serializable
 {
 
-    private List<Listener> listeners;
+    private List<Listener> listeners = new java.util.ArrayList<Listener>();
 
     private List<Panel> panels;
 
