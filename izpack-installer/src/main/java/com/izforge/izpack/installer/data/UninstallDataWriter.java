@@ -395,6 +395,28 @@ public class UninstallDataWriter
         {
             outJar.putNextEntry(new JarEntry("exec-admin"));
             outJar.closeEntry();
+
+//            String runWithPriv = "com/izforge/izpack/installer/run-with-privileges-on-osx";
+//            outJar.putNextEntry(new JarEntry(runWithPriv));
+//            InputStream in = getClass().getResourceAsStream(runWithPriv);
+//            if (in != null)
+//            {
+//                try
+//                {
+//                        byte[] buffer = new byte[1024];
+//                        int bytesInBuffer;
+//                        while ((bytesInBuffer = in.read(buffer)) != -1)
+//                        {
+//                            outJar.write(buffer, 0, bytesInBuffer);
+//                        }
+//                }
+//                finally
+//                {
+//                        in.close();
+//                }
+//            }
+//            outJar.closeEntry();
+//
         }
 
         // We put the langpack
