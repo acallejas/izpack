@@ -144,7 +144,7 @@ public class RulesEngineImpl implements RulesEngine
 
     public void readConditionMap(Map<String, Condition> rules)
     {
-	conditionsmap.putAll(rules);
+        conditionsmap.putAll(rules);
         for (String key : rules.keySet())
         {
             Condition condition = rules.get(key);
